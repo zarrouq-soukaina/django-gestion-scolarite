@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+    table {
+      border-collapse: collapse;
+      width: 10%;
+    }
+  </style>
+</head>
+
+<body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
+  
+  
+    <div class="min-h-screen flex">
+  <div class="py-12 px-10 w-1/4">
+    <div class="flex space-2 items-center border-b-2 pb-4">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <div class="ml-3">
+        <h1 class="text-3xl font-bold text-indigo-600">ADMIN</h1>
+        <p class="text-center text-sm text-indigo-600 mt-1 font-serif">DASHBOARD</p>
+      </div>
+    </div>
+    <div class="flex items-center space-x-4 mt-6 p-2 bg-indigo-600 rounded-md">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+        </svg>
+      </div>
+      <div>
+        <p class="text-lg text-white font-semibold">Dashboard</p>
+      </div>
+    </div>
+    <div class="mt-8">
+      <ul class="space-y-10">
+        <li>
+          <form action='#' method='GET'>
+           <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+             </svg>
+         Home</button></form>
+           
+       </li>
+        <li>
+          <form action='generate_pdr' method='GET'>
+           <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+             </svg>
+         Attestation réussite/scolarité</button></form>
+           
+       </li>
+        <li>
+           <form action='indexE' method='GET'>
+            <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+              </svg>
+          Etudiants</button></form>
+            
+        </li>
+        <li>
+          <form action='indexP' method='GET'>
+          <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            Professeurs</button></form>
+        </li>
+        <li>
+          <form action='indexC' method='GET'>
+          <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit" >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" viewBox="0 0 20 20" fill="currentColor">
+              
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+              </svg>
+            Classes</button></form>
+        </li>
+        <li>
+          <form action='indexF' method='GET'>
+          <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit" >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z" />
+              </svg>
+            Filières</button></form>
+        </li>
+        <li>
+          <form action='indexN' method='GET'>
+          <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            Niveaux</button></form>
+        </li>
+        <li>
+          <form action='indexM' method='GET'>
+            <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+            </svg>
+            Notes</button></form>
+        </li>
+        <li>
+          <form action='change_password' method='GET'>
+            <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+            </svg>
+            Modifier le mot de passe</button></form>
+        </li>
+      </ul>
+    </div>
+    <div class="flex mt-20 space-x-4 items-center">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 hover:text-indigo-600 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+        </svg>
+      </div>
+      <a href="{% url 'logout' %}" class="block font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">Se déconnecter</a>
+    </div>
+  </div>
+  <div class="bg-indigo-50 flex-grow py-12 px-10">
+    <div class="flex justify-between">
+      <div>
+        
+        <h1 class="text-4xl font-bold text-indigo-900 mt-">La liste des étudiants de la classe</h1>
+      </div>
+     
+    </div>
+    <div>
+      <div class="flex mt-10 space-x-10">
+        
+         
+          <div class="row">
+            <div class="col">
+              <div class="card card-body">
+          
+                <form method="get">
+                  {{myFilter.form}}
+                  <button
+                  data-modal-toggle="example"
+                  data-modal-action="open"
+                  class="bg-purple-600 font-semibold text-white p-2 w-32 rounded-full hover:bg-purple-700 focus:outline-none focus:ring shadow-lg hover:shadow-none transition-all duration-300 m-2"
+                  type="submit"
+                  >
+                 Search</button>
+                </form>
+          
+              </div>
+            </div>
+            
+          </div>
+          
+    
+        </div>
+        
+      </div>
+      <div class="card card-body">
+        <form action='createE' method='GET'>
+          {% csrf_token %}
+          <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit" >
+            Ajouter étudiant
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" />
+              </svg>
+              
+            </button></form>
+  
+      </div>
+      <table class="max-w-5xl mx-auto table-auto" style="overflow:scroll" white-space="nowrap">
+        <thead class="justify-between">
+          <tr class="bg-purple-600">
+            <th class="px-16 py-2 text-center">
+              <span class="text-gray-100 font-semibold">Prénom</span>
+            </th>
+            <th class="px-16 py-2 text-center">
+              <span class="text-gray-100 font-semibold">Nom</span>
+            </th>
+           
+            <th class="px-16 py-2 text-center">
+              <span class="text-gray-100 font-semibold">Téléphone</span>
+            </th>
+          
+
+            <th class="px-16 py-2 text-center">
+              <span class="text-gray-100 font-semibold">Sexe</span>
+            </th>
+
+            <th class="px-16 py-2 text-center">
+              <span class="text-gray-100 font-semibold">CNE</span>
+            </th>
+
+            <th class="px-16 py-2 text-center">
+              <span class="text-gray-100 font-semibold">Nationalité</span>
+            </th>
+
+            <th class="px-16 py-2 text-center">
+              <span class="text-gray-100 font-semibold">Niveau</span>
+            </th>
+
+            <th class="px-16 py-2 text-center">
+              <span class="text-gray-100 font-semibold">Actions</span>
+            </th>
+
+ 
+            
+          </tr>
+        </thead>
+
+        <tbody class="bg-gray-200 text-center">
+          {% for etud in etu %}
+          <tr class="bg-white border-b-2 border-gray-200">
+            <td>
+               <span class="text-center ml-2 font-semibold">{{ etud.user.prenom }}</span>
+            </td>
+            <td>
+              <span class="text-center ml-2 font-semibold">{{ etud.user.nom }}</span>
+            </td>
+           
+          
+            <td class="px-16 py-2 text-center">
+              <span>{{ etud.user.tel }}</span>
+            </td>
+
+            <td class="px-16 py-2 text-center">
+              <span>{{ etud.sexe }}</span>
+            </td>
+
+            <td class="px-16 py-2 text-center">
+              <span>{{ etud.CNE }}</span>
+            </td>
+
+            <td class="px-16 py-2 text-center">
+              <span>{{ etud.nationalite }}</span>
+            </td>
+
+            <td class="px-16 py-2 text-center">
+              <span>{{ etud.niveau.niveau }}</span> 
+            </td>
+
+              <td class="py-3 px-6 text-center">
+                <div class="flex item-center justify-center">
+                  
+                    <div class="flex mb-4 items-center">
+                      
+                      <a href="{% url 'viewE' etud.user.id %}">
+                      <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                          
+                        </svg>
+                        </button></a>
+
+                    </div>
+
+                    
+
+                    <div class="flex mb-4 items-center">
+                        
+                      <a href="{% url 'deleteE' etud.user.id %}">
+                        <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit">
+                          <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                class="h-5 w-5 text-red-700"
+                                                viewBox="0 0 20 20"
+                                                fill="currentColor"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z"
+                                                    clip-rule="evenodd"
+                                                />
+                                            </svg>
+                          </button></a>
+                     
+                    </div>
+
+                </div>
+            </td>
+
+            
+
+          </tr>
+          {% endfor %}
+
+        </tbody>
+      </table>
+
+    
+     
+      
+          
+        </div>
+        
+
+
+      </div>
+      <div></div>
+      <div></div>
+    </div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+</body>
+</html>

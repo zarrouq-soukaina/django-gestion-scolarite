@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+    table {
+      border-collapse: collapse;
+      width: 10%;
+    }
+  </style>
+</head>
+
+<body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
+  
+  
+    <div class="min-h-screen flex">
+  <div class="py-12 px-10 w-1/4">
+    <div class="flex space-2 items-center border-b-2 pb-4">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <div class="ml-3">
+        <h1 class="text-3xl font-bold text-indigo-600">Espace Etudiant</h1>
+       
+      </div>
+    </div>
+    <div class="flex items-center space-x-4 mt-6 p-2 bg-indigo-600 rounded-md">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 10a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z" />
+        </svg>
+      </div>
+      <div>
+        <p class="text-lg text-white font-semibold">Dashboard</p>
+      </div>
+    </div>
+    <div class="mt-8">
+      <ul class="space-y-10">
+        <li>
+          <form action='#' method='GET'>
+           <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit">
+             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+               <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+             </svg>
+         Home</button></form>
+           
+       </li>
+       <li>
+        <form action='noteEtudiant' method='GET'>
+        <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          Notes</button></form>
+      </li>
+      <li>
+        <form action='classEtudiant' method='GET'>
+        <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit" >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" viewBox="0 0 20 20" fill="currentColor">
+            
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+            </svg>
+          Classes</button></form>
+      </li>
+      <li>
+        <form action='change_password' method='GET'>
+          <button class="flex items-center text-sm font-semibold text-gray-500 hover:text-indigo-600 transition duration-200" type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4 text-gray-400 hover:text-indigo-600 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+          </svg>
+          Modifier le mot de passe</button></form>
+      </li>
+        
+      </ul>
+    </div>
+    <div class="flex mt-20 space-x-4 items-center">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 hover:text-indigo-600 transition duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+        </svg>
+      </div>
+      <a href="{% url 'logout' %}" class="block font-semibold text-gray-500 hover:text-indigo-600 transition duration-200">Se déconnecter</a>
+    </div>
+  </div>
+  <div class="bg-indigo-50 flex-grow py-12 px-10">
+    <div class="flex justify-between">
+      <div>
+        
+        <h1 class="text-4xl font-bold text-indigo-900 mt-">Bonjour {{user.nom}} {{user.prenom}},</h1>
+      </div>
+     
+    </div>
+    <div>
+      <div class="mt-2">
+       
+
+        <div>
+          <div class="mt-2">
+            <div class="container mx-auto my-5 p-5">
+                <div class="md:flex no-wrap md:-mx-2 ">
+                    <!-- Left Side -->
+                    <div class="w-full md:w-3/12 md:mx-2">
+                        <!-- Profile Card -->
+                        <div class="bg-white p-3 border-t-4 border-purple-400">
+                            <div class="image overflow-hidden">
+                                <img class="h-auto w-full mx-auto"
+                                    src="https://cdn.icon-icons.com/icons2/1674/PNG/512/person_110935.png"
+                                    alt="">
+                            </div>
+                            <h1 class="text-gray-900 font-bold text-xl leading-8 my-1">{{ etu.prenom }}
+                              {{ etu.nom }}</h1>
+                            
+                            <ul
+                                class="bg-gray-100 text-gray-600 hover:text-gray-700 hover:shadow py-2 px-3 mt-3 divide-y rounded shadow-sm">
+                                <li class="flex items-center py-3">
+                                    <span>Statut</span>
+                                    <span class="ml-auto"><span
+                                            class="bg-purple-500 py-1 px-2 rounded text-white text-sm">Active</span></span>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                        <!-- End of profile card -->
+                        <div class="my-4"></div>
+                        
+                    </div>
+                    <!-- Right Side -->
+                    <div class="w-full md:w-9/12 mx-2 h-64">
+                        <!-- Profile tab -->
+                        <!-- About Section -->
+                        <div class="bg-white p-3 shadow-sm rounded-sm">
+                            <div class="flex items-center space-x-2 font-semibold text-gray-900 leading-8">
+                                <span clas="text-green-500">
+                                    <svg class="h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                    </svg>
+                                </span>
+                                <span class="tracking-wide">Informations personnelles :</span>
+                            </div>
+                            
+                              
+                            <div class="container" style="margin-top: 50px">
+                                <table class="table">
+                                  <tbody>
+                                    
+        
+                                    
+                                    <tr>
+                                      <td><h1 class="text-2xl font-bold text-transparent md:text-3xl bg-clip-text bg-gradient-to-t from-purple-400  to-purple-800"> Id : </h1></td>
+                                      <td>{{ etu.user_id }} </td>
+                                    </tr>
+                                    <tr>
+                                      <td><h1 class="text-2xl font-bold text-transparent md:text-3xl bg-clip-text bg-gradient-to-t from-purple-400  to-purple-800"> Prénom : </h1></td>
+                                      <td>{{ etu.user.prenom }} </td>
+                                    </tr>
+                                    <tr>
+                                      <td><h1 class="text-2xl font-bold text-transparent md:text-3xl bg-clip-text bg-gradient-to-t from-purple-400  to-purple-800">Nom : </h1></td>
+                                      <td>{{ etu.user.nom }} </td>
+                                    </tr>
+                                    <tr>
+                                      <td><h1 class="text-2xl font-bold text-transparent md:text-3xl bg-clip-text bg-gradient-to-t from-purple-400  to-purple-800">Email : </h1></td>
+                                      <td>{{ etu.user.email }}</td>
+                                    </tr> 
+                                    <tr>
+                                      <td><h1 class="text-2xl font-bold text-transparent md:text-3xl bg-clip-text bg-gradient-to-t from-purple-400  to-purple-800">Contact : </h1></td>
+                                      <td>{{ etu.user.tel }}</td>
+                                    </tr>
+        
+                                    <tr>
+                                      <td><h1 class="text-2xl font-bold text-transparent md:text-3xl bg-clip-text bg-gradient-to-t from-purple-400  to-purple-800"> Sexe  : </h1></td>
+                                      <td>{{ etu.sexe }}</td>
+                                    </tr>
+        
+                                    <tr>
+                                      <td><h1 class="text-2xl font-bold text-transparent md:text-3xl bg-clip-text bg-gradient-to-t from-purple-400  to-purple-800">CNE : </h1></td>
+                                      <td>{{ etu.CNE }}</td>
+                                    </tr>
+        
+                                    <tr>
+                                      <td><h1 class="text-2xl font-bold text-transparent md:text-3xl bg-clip-text bg-gradient-to-t from-purple-400  to-purple-800">Nationalité: </h1></td>
+                                      <td>{{ etu.nationalite }}</td>
+                                    </tr>
+        
+                                    <tr>
+                                      <td><h1 class="text-2xl font-bold text-transparent md:text-3xl bg-clip-text bg-gradient-to-t from-purple-400  to-purple-800">Niveau  : </h1></td>
+                                      <td>{{ etu.niveau.niveau }}</td>
+                                    </tr>
+                                    
+                                  </tbody>
+                                </table>
+                              </div>
+        
+        
+        
+                           
+                        </div>
+            </div>
+            
+    
+    
+          </div>
+          <div></div>
+          <div></div>
+        </div>
+        
+
+
+      </div>
+      <div></div>
+      <div></div>
+    </div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+ 
+</body>
+</html>

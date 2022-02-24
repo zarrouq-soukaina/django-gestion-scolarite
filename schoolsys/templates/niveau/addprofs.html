@@ -1,0 +1,51 @@
+{% load widget_tweaks %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@2.2.4/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
+    <div class="min-h-screen bg-purple-400 flex justify-center items-center">
+  <div class="absolute w-60 h-60 rounded-xl bg-purple-300 -top-5 -left-16 z-0 transform rotate-45 hidden md:block"></div>
+  <div class="absolute w-48 h-48 rounded-xl bg-purple-300 -bottom-6 -right-10 transform rotate-12 hidden md:block"></div>
+  <div class="py-12 px-12 bg-white rounded-2xl shadow-xl z-20">
+    <div>
+
+      <br>
+	   <br> 
+	   <br>
+      <h1 class="text-3xl font-bold text-center mb-4 cursor-pointer">Ajoutez d'autres professeurs :</h1>
+
+      <br>
+	   <br> 
+	   <br>
+      
+    </div>
+
+    <div class="space-y-4">
+      
+		<form action="" method="POST">
+			{% csrf_token %}
+			<h2 class="text-2xl font-bold text-center mb-4 cursor-pointer">{{form}}</h2>
+      <br>
+	   <br> 
+	   <br>
+			
+			<h2 class="text-2xl font-bold text-center mb-4 cursor-pointer"><input type="submit" name="Submit"></h2>
+      <br>
+	   <br> 
+	   <br>
+		</form>
+      
+    </div>
+
+    
+  </div>
+  <div class="w-40 h-40 absolute bg-purple-300 rounded-full top-0 right-12 hidden md:block"></div>
+  <div class="w-20 h-40 absolute bg-purple-300 rounded-full bottom-20 left-10 transform rotate-45 hidden md:block"></div>
+</div>
+</body>
+</html>
